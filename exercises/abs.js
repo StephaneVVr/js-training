@@ -11,6 +11,9 @@
 
 // Your code :
 
+let abs = num => num >= 0 ? num : -num;
+
+
 //* Begin of tests
 const assert = require('assert')
 
