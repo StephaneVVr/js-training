@@ -10,10 +10,17 @@
  *
  */
 
+function jadenCase(charact){
+    let tabl = charact.split(" ");
+    
+    for(let i=0; i < tabl.length; i++)
+        console.log(tabl[i].charAt(0).toUpperCase() + tabl[i].substring(1).toLowerCase());
+}
 
 
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+assert.strictEqual(typeof jadenCase, 'function')
+
 // End of tests */
